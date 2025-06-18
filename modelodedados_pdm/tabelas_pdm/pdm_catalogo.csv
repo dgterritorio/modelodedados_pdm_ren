@@ -1,0 +1,153 @@
+"id","planta_ordenamento","planta_condicionantes","tema_ordenamento","subtema_ordenamento","tema_condicionantes","subtema_condicionantes","objeto_designacao","objeto_codigo"
+1,"Planta de Ordenamento","Planta de Condicionantes","Área de Intervenção do Plano","Área de Intervenção do Plano","Área de Intervenção do Plano","Área de Intervenção do Plano","Área de Intervenção do Plano",1
+2,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Urbano",,,"Espaço Central",2
+3,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Urbano",,,"Espaço Habitacional",3
+4,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Urbano",,,"Espaço Urbano de Baixa Densidade",4
+5,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Urbano",,,"Espaço de Atividades Económicas",5
+6,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Urbano",,,"Espaço de uso especial – equipamento",152
+7,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Urbano",,,"Espaço de uso especial – infraestrutura estruturante",151
+8,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Urbano",,,"Espaço de uso especial – turístico",6
+9,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Urbano",,,"Espaço Verde",7
+10,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Rústico",,,"Espaço Agrícola",8
+11,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Rústico",,,"Espaço Florestal",9
+12,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Rústico",,,"Espaço de Exploração de Recursos Energéticos e Geológicos",10
+13,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Rústico",,,"Espaço Natural e Paisagístico",11
+14,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Rústico",,,"Espaço de Atividades Industriais",12
+15,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Rústico",,,"Aglomerado Rural",13
+16,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Rústico",,,"Área de Edificação Dispersa",14
+17,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Rústico",,,"Espaço Cultural",15
+18,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Rústico",,,"Espaço de Ocupação Turística",16
+19,"Planta de Ordenamento",,"Classificação e Qualificação do Solo","Solo Rústico",,,"Espaço de Equipamentos e Infraestruturas",17
+20,"Planta de Ordenamento",,"Áreas com Funções Específicas","Estrutura Ecológica Municipal",,,"Estrutura Ecológica Municipal",18
+21,"Planta de Ordenamento",,"Áreas com Funções Específicas","Espaço Canal",,,"Espaço Canal",19
+22,"Planta de Ordenamento",,"Áreas com Funções Específicas","Risco",,,"Área de Perigosidade",134
+23,"Planta de Ordenamento",,"Áreas com Funções Específicas","Risco",,,"Área de Risco",133
+24,"Planta de Ordenamento",,"Áreas com Funções Específicas","Ruído",,,"Zona Sensível ao Ruído",139
+25,"Planta de Ordenamento",,"Áreas com Funções Específicas","Ruído",,,"Zona Mista ao Ruído",140
+26,"Planta de Ordenamento",,"Áreas com Funções Específicas","Zona de proteção e de salvaguarda dos recursos e valores naturais",,,"Zona de proteção e de salvaguarda dos recursos e valores naturais",145
+27,"Planta de Ordenamento",,"Áreas com Funções Específicas","Património geológico",,,"Geossítio",149
+28,"Planta de Ordenamento",,"Áreas com Funções Específicas","Inventário de bens culturais",,,"Imóvel inventariado",150
+29,"Planta de Ordenamento",,"Programação da Execução do Plano","Programação da Execução do Plano",,,"Unidade Operativa de Planeamento e Gestão (U.O.P.G.)",20
+30,"Planta de Ordenamento",,"Programação da Execução do Plano","Programação da Execução do Plano",,,"Unidade de execução",138
+31,"Planta de Ordenamento",,"Áreas de Intervenção de Outros Instrumentos ou Entidades","Programas Territoriais",,,"Área de Intervenção de Programa Especial",21
+32,"Planta de Ordenamento",,"Áreas de Intervenção de Outros Instrumentos ou Entidades","Programas Territoriais",,,"Área de Intervenção de Programa Setorial",130
+33,"Planta de Ordenamento",,"Áreas de Intervenção de Outros Instrumentos ou Entidades","Programas Territoriais",,,"Área de Intervenção de Programa Intermunicipal",131
+34,"Planta de Ordenamento",,"Áreas de Intervenção de Outros Instrumentos ou Entidades","Planos Territoriais",,,"Área de Intervenção de Plano Intermunicipal (PUI, PPI)",132
+35,"Planta de Ordenamento",,"Áreas de Intervenção de Outros Instrumentos ou Entidades","Planos Territoriais",,,"Área de Intervenção de Plano Municipal (PU, PP)",22
+36,"Planta de Ordenamento",,"Áreas de Intervenção de Outros Instrumentos ou Entidades","Reabilitação ou Revitalização",,,"Área Urbana de Génese Ilegal (AUGI)",135
+37,"Planta de Ordenamento",,"Áreas de Intervenção de Outros Instrumentos ou Entidades","Reabilitação ou Revitalização",,,"Área de Reabilitação Urbana (ARU)",136
+38,"Planta de Ordenamento",,"Áreas de Intervenção de Outros Instrumentos ou Entidades","Área de Jurisdição dos Portos",,,"Área de Jurisdição do Porto",129
+39,"Planta de Ordenamento",,"Sistemas Estruturantes","Equipamentos de Utilização Coletiva",,,"Equipamento de Utilização Coletiva",23
+40,"Planta de Ordenamento",,"Sistemas Estruturantes","Equipamentos de Utilização Coletiva",,,"Equipamento de Utilização Coletiva Previsto",24
+41,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Circulação e Transporte",,,"Rodovia Principal",25
+42,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Circulação e Transporte",,,"Rodovia Principal Prevista",26
+43,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Circulação e Transporte",,,"Rodovia Distribuidora",27
+44,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Circulação e Transporte",,,"Rodovia Distribuidora Prevista",28
+45,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Circulação e Transporte",,,"Rodovia de Acesso Local",29
+46,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Circulação e Transporte",,,"Rodovia de Acesso Local Prevista",30
+47,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Circulação e Transporte",,,"Nó Rodoviário",31
+48,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Circulação e Transporte",,,"Nó Rodoviário Previsto",32
+49,"Planta de Ordenamento","Planta de Condicionantes","Sistemas Estruturantes","Infraestruturas de Circulação e Transporte","Infraestruturas","Rede Ferroviária","Via-Férrea",35
+50,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Circulação e Transporte",,,"Via-Férrea Prevista",36
+51,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Circulação e Transporte",,,"Estação ou Interface de Transporte",33
+52,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Circulação e Transporte",,,"Estação ou Interface de Transporte Prevista",34
+53,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Circulação e Transporte",,,"Estacionamento",146
+54,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Circulação e Transporte",,,"Estacionamento Previsto",147
+55,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Circulação e Transporte",,,"Infraestrutura de Transporte Aéreo",37
+56,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Circulação e Transporte",,,"Infraestrutura de Transporte Aéreo Prevista",38
+57,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Circulação e Transporte",,,"Porto",39
+58,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Circulação e Transporte",,,"Porto Previsto",40
+59,"Planta de Ordenamento","Planta de Condicionantes","Sistemas Estruturantes","Infraestruturas de Abastecimento de Água","Infraestruturas","Abastecimento de Água","Captação, Tratamento ou Armazenamento de Água",41
+60,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Abastecimento de Água",,,"Captação, Tratamento ou Armazenamento de Água Prevista",42
+61,"Planta de Ordenamento","Planta de Condicionantes","Sistemas Estruturantes","Infraestruturas de Drenagem de Águas Residuais","Infraestruturas","Drenagem de Águas Residuais","Bombagem ou Tratamento de Águas Residuais",45
+62,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Drenagem de Águas Residuais",,,"Bombagem ou Tratamento de Águas Residuais Prevista",46
+63,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturasde Recolha e Tratamento de Resíduos Sólidos",,,"Estação de Tratamento de Resíduos Sólidos",47
+64,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturasde Recolha e Tratamento de Resíduos Sólidos",,,"Estação de Tratamento de Resíduos Sólidos Prevista",48
+65,"Planta de Ordenamento","Planta de Condicionantes","Sistemas Estruturantes","Infraestruturas de Abastecimento de Energia Elétrica","Infraestruturas","Rede Elétrica","Infraestrutura de Produção ou Transformação de Energia Elétrica",49
+66,"Planta de Ordenamento",,"Sistemas Estruturantes","Infraestruturas de Abastecimento de Energia Elétrica",,,"Infraestrutura de Produção ou Transformação de Energia Elétrica Prevista",50
+67,,"Planta de Condicionantes",,,"Recursos Hídricos","Domínio Público Hídrico","Leito e Margem das Águas do Mar",53
+68,,"Planta de Condicionantes",,,"Recursos Hídricos","Domínio Público Hídrico","Leito e Margem das Águas Fluviais",54
+69,,"Planta de Condicionantes",,,"Recursos Hídricos","Domínio Público Hídrico","Zona Contígua à Margem",55
+70,,"Planta de Condicionantes",,,"Recursos Hídricos","Domínio Público Hídrico","Zona Adjacente",56
+71,,"Planta de Condicionantes",,,"Recursos Hídricos","Albufeiras, Lagos ou Lagoas de Águas Públicas","Albufeira Classificada",57
+72,,"Planta de Condicionantes",,,"Recursos Hídricos","Albufeiras, Lagos ou Lagoas de Águas Públicas","Lago ou Lagoa classificada",58
+73,,"Planta de Condicionantes",,,"Recursos Hídricos","Albufeiras, Lagos ou Lagoas de Águas Públicas","Zona Terrestre de Proteção",59
+74,,"Planta de Condicionantes",,,"Recursos Hídricos","Albufeiras, Lagos ou Lagoas de Águas Públicas","Zona Reservada da Zona Terrestre de Proteção",60
+75,,"Planta de Condicionantes",,,"Recursos Hídricos","Albufeiras, Lagos ou Lagoas de Águas Públicas","Zona de Proteção da Barragem",61
+76,,"Planta de Condicionantes",,,"Recursos Hídricos","Albufeiras, Lagos ou Lagoas de Águas Públicas","Zona de Respeito da Barragem",62
+77,,"Planta de Condicionantes",,,"Recursos Geológicos","Captações de Águas Subterrâneas para Abastecimento Público","Perímetro de Proteção de Captação de Água Subterrânea",63
+78,,"Planta de Condicionantes",,,"Recursos Geológicos","Águas de Nascente","Perímetro de Proteção de Águas da Nascente",64
+79,,"Planta de Condicionantes",,,"Recursos Geológicos","Águas Minerais Naturais","Perímetro de Proteção de Águas Minerais Naturais",65
+80,,"Planta de Condicionantes",,,"Recursos Geológicos","Pedreiras","Zona de Defesa / Zona Especial de Defesa",66
+81,,"Planta de Condicionantes",,,"Recursos Geológicos","Pedreiras","Área Cativa / Área de Reserva",67
+82,,"Planta de Condicionantes",,,"Recursos Geológicos","Recursos Geológicos","Área de Servidão de Recurso Geológico",142
+83,,"Planta de Condicionantes",,,"Recursos Agrícolas e Florestais","Reserva Agrícola Nacional","Reserva Agrícola Nacional",68
+84,,"Planta de Condicionantes",,,"Recursos Agrícolas e Florestais","Reserva Agrícola Nacional","Área Excluida da Reserva Agrícola Nacional",69
+85,,"Planta de Condicionantes",,,"Recursos Agrícolas e Florestais","Obras de Aproveitamento Hidroagrícola","Perímetro Hidroagrícola",70
+86,,"Planta de Condicionantes",,,"Recursos Agrícolas e Florestais","Oliveiras","Povoamento de Oliveiras",71
+87,,"Planta de Condicionantes",,,"Recursos Agrícolas e Florestais","Sobreiros ou Azinheiras","Povoamento de Sobreiros ou Azinheiras",72
+88,,"Planta de Condicionantes",,,"Recursos Agrícolas e Florestais","Sobreiros ou Azinheiras","Área onde tenham ocorrido Incêndios,Depreciação do Arvoredo ou Abates Ilegais",73
+89,,"Planta de Condicionantes",,,"Recursos Agrícolas e Florestais","Azevinho","Povoamento de Azevinho",74
+90,,"Planta de Condicionantes",,,"Recursos Agrícolas e Florestais","Regime Florestal","Regime Florestal Total",75
+91,,"Planta de Condicionantes",,,"Recursos Agrícolas e Florestais","Regime Florestal","Regime Florestal Parcial",76
+92,,"Planta de Condicionantes",,,"Recursos Agrícolas e Florestais","Povoamentos Florestais Percorridos por Incêndio","Povoamento Florestal Percorrido por Incêndio",77
+93,,"Planta de Condicionantes",,,"Recursos Agrícolas e Florestais","Protecção ao Risco de Incêndio","Classe de Risco de Incêndio (alta ou muito alta)",78
+94,,"Planta de Condicionantes",,,"Recursos Agrícolas e Florestais","Protecção ao Risco de Incêndio","Zona critica",79
+95,,"Planta de Condicionantes",,,"Recursos Agrícolas e Florestais","Protecção ao Risco de Incêndio","Redes de Faixas de Gestão de Combustível (rede primária e secundária)",80
+96,,"Planta de Condicionantes",,,"Recursos Agrícolas e Florestais","Árvores e Arvoredo de Interesse Público","Árvore ou Arvoredo de Interesse Público",81
+97,,"Planta de Condicionantes","Recursos Ecológicos","Reserva Ecológica Nacional",,,"Reserva Ecológica Nacional",148
+98,,"Planta de Condicionantes",,,"Recursos Ecológicos","Reserva Ecológica Nacional","Área Excluida da Reserva Ecológica Nacional",82
+99,,"Planta de Condicionantes",,,"Recursos Ecológicos","Áreas Protegidas","Parque Nacional",83
+100,,"Planta de Condicionantes",,,"Recursos Ecológicos","Áreas Protegidas","Parque Natural",84
+101,,"Planta de Condicionantes",,,"Recursos Ecológicos","Áreas Protegidas","Reserva Natural",85
+102,,"Planta de Condicionantes",,,"Recursos Ecológicos","Áreas Protegidas","Monumento Natural",86
+103,,"Planta de Condicionantes",,,"Recursos Ecológicos","Áreas Protegidas","Paisagem Protegida (de interesse regional ou local)",87
+104,,"Planta de Condicionantes",,,"Recursos Ecológicos","Rede Natura 2000","Sítio da Lista Nacional",88
+105,,"Planta de Condicionantes",,,"Recursos Ecológicos","Rede Natura 2000","Zona Especial de Conservação",89
+106,,"Planta de Condicionantes",,,"Recursos Ecológicos","Rede Natura 2000","Zona de Proteção Especial",90
+107,,"Planta de Condicionantes",,,"Património Cultural","Patrimínio Arqueológico","Parque Arqueológico",141
+108,,"Planta de Condicionantes",,,"Património Cultural","Imóveis Classificados","Monumento Nacional",91
+109,,"Planta de Condicionantes",,,"Património Cultural","Imóveis Classificados","Imóvel de Interesse Público",92
+110,,"Planta de Condicionantes",,,"Património Cultural","Imóveis Classificados","Imóvel de Interesse Municipal",93
+111,,"Planta de Condicionantes",,,"Património Cultural","Imóveis Classificados","Imóvel em Vias De Classificação",94
+112,,"Planta de Condicionantes",,,"Património Cultural","Imóveis Classificados","Zona Geral de Proteção",95
+113,,"Planta de Condicionantes",,,"Património Cultural","Imóveis Classificados","Zona Especial de Proteção Provisória",96
+114,,"Planta de Condicionantes",,,"Património Cultural","Imóveis Classificados","Zona Especial de Proteção",97
+115,,"Planta de Condicionantes",,,"Património Cultural","Edifícios Públicos e Outras Construções","Zona de Proteção de Edifício Público ou de Outra Construção",98
+116,,"Planta de Condicionantes",,,"Equipamentos","Estabelecimentos Prisionais e Tutelares de Menores","Zona de Proteção de Estabelecimento Prisional ou Tutelar de Menores",99
+117,,"Planta de Condicionantes",,,"Equipamentos","Instalações Aduaneiras","Área de Jurisdição de Alfândega",100
+118,,"Planta de Condicionantes",,,"Equipamentos","Defesa Nacional","Zona de Servidão Militar",101
+119,,"Planta de Condicionantes",,,"Infraestruturas","Abastecimento de Água","Conduta Adutora",43
+120,,"Planta de Condicionantes",,,"Infraestruturas","Abastecimento de Água","Zona de Servidão de Abastecimento de Água",102
+121,,"Planta de Condicionantes",,,"Infraestruturas","Drenagem de Águas Residuais","Colector de Águas Residuais",44
+122,,"Planta de Condicionantes",,,"Infraestruturas","Drenagem de Águas Residuais","Zona de Servidão de Drenagem de Águas Residuais",103
+123,,"Planta de Condicionantes",,,"Infraestruturas","Rede Elétrica","Infraestrutura de Transporte de Energia Eletrica",51
+124,,"Planta de Condicionantes",,,"Infraestruturas","Rede Elétrica","Zona de Servidão de Rede Elétrica",104
+125,,"Planta de Condicionantes",,,"Infraestruturas","Gasodutos e Oleodutos","Gasoduto ou Oleoduto",52
+126,,"Planta de Condicionantes",,,"Infraestruturas","Gasodutos e Oleodutos","Infraestrutura Associada a Gasoduto ou Oleoduto",137
+127,,"Planta de Condicionantes",,,"Infraestruturas","Gasodutos e Oleodutos","Zona de Servidão de Gasoduto ou Oleoduto",105
+128,,"Planta de Condicionantes",,,"Infraestruturas","Rede Rodoviária Nacional e Regional","Itinerário Principal",106
+129,,"Planta de Condicionantes",,,"Infraestruturas","Rede Rodoviária Nacional e Regional","Itinerário Principal Autoestrada",107
+130,,"Planta de Condicionantes",,,"Infraestruturas","Rede Rodoviária Nacional e Regional","Itinerário Complementar",108
+131,,"Planta de Condicionantes",,,"Infraestruturas","Rede Rodoviária Nacional e Regional","Itinerário Complementar Autoestrada",109
+132,,"Planta de Condicionantes",,,"Infraestruturas","Rede Rodoviária Nacional e Regional","Estrada Nacional",110
+133,,"Planta de Condicionantes",,,"Infraestruturas","Rede Rodoviária Nacional e Regional","Estrada Regional",111
+134,,"Planta de Condicionantes",,,"Infraestruturas","Rede Rodoviária Nacional e Regional","Estrada em Projeto",143
+135,,"Planta de Condicionantes",,,"Infraestruturas","Rede Rodoviária Nacional e Regional","Zona de Servidão de Estrada do Plano Rodoviário Nacional",112
+136,,"Planta de Condicionantes",,,"Infraestruturas","Rede Rodoviária Nacional e Regional","Zona de Respeito de Estrada do Plano Rodoviário Nacional",144
+137,,"Planta de Condicionantes",,,"Infraestruturas","Estradas Nacionais Desclassificadas","Estradas Nacionais Desclassificadas",113
+138,,"Planta de Condicionantes",,,"Infraestruturas","Estradas Nacionais Desclassificadas","Zona de Servidão de Estrada Nacional Desclassificada",114
+139,,"Planta de Condicionantes",,,"Infraestruturas","Estradas e Caminhos Municipais","Estrada Municipal",115
+140,,"Planta de Condicionantes",,,"Infraestruturas","Estradas e Caminhos Municipais","Caminho Municipal",116
+141,,"Planta de Condicionantes",,,"Infraestruturas","Estradas e Caminhos Municipais","Zona de Servidão de Estrada ou Caminho Municipal",117
+142,,"Planta de Condicionantes",,,"Infraestruturas","Rede Ferroviária","Zona de Servidão de Via-Férrea",118
+143,,"Planta de Condicionantes",,,"Infraestruturas","Aeroportos e Aeródromos","Zona de Servidão Aeronaútica",119
+144,,"Planta de Condicionantes",,,"Infraestruturas","Telecomunicações","Zona de Servidão Radioeléctrica",120
+145,,"Planta de Condicionantes",,,"Infraestruturas","Faróis e Outros Sinais Marítimos","Farol ou Outro Sinal Marítimo",121
+146,,"Planta de Condicionantes",,,"Infraestruturas","Faróis e Outros Sinais Marítimos","Zona de Servidão de Sinalização Maritima",122
+147,,"Planta de Condicionantes",,,"Infraestruturas","Rede Geodésica","Zona de Proteção da Rede Geodésica",123
+148,,"Planta de Condicionantes",,,"Infraestruturas","Rede Geodésica","Marco Geodésico",124
+149,,"Planta de Condicionantes",,,"Atividades Perigosas","Substâncias Perigosas","Estabelecimento com Produtos Explosivos",125
+150,,"Planta de Condicionantes",,,"Atividades Perigosas","Substâncias Perigosas","Zona de Segurança de Estabelecimento com Produtos Explosivos",126
+151,,"Planta de Condicionantes",,,"Atividades Perigosas","Substâncias Perigosas","Estabelecimento com Substâncias Perigosas",127
+152,,"Planta de Condicionantes",,,"Atividades Perigosas","Substâncias Perigosas","Zona de Segurança de Estabelecimento com Substâncias Perigosas",128
