@@ -746,6 +746,10 @@ imprescindível para sua leitura.
 |30|**Rodovia de Acesso Local Prevista**|Linha|Traço contínuo|0.50|255;0;0|-|Traço: 2,0 mm; Espaçamento: 1,0 mm|![](media/image54.jpg)|Ordenamento|
 |31|**Nó Rodoviário**|Ponto|Traço contínuo|-|255;0;0|255;0;0|Circulo - Dimensão: 5,0 mm|![](media/image55.jpg)|Ordenamento|
 |32|**Nó Rodoviário Previsto**|Ponto|Traço contínuo|0.53|255;0;0|255;255;255 / 255;0;0|Circulo com preenchimento de 50% em cima em Cor: 255;255;255 e 50% em baixo em Cor: 255;0;0; Dimensão: 5,0 mm|![](media/image56.jpg)|Ordenamento|
+|33|**Estação ou Interface de Transporte**|Ponto|Traço contínuo|-|0;0;0|0;0;0|Quadrado - Dimensão: 3,5 mm|![](media/image58.jpg)|Ordenamento|
+|34|**Estação ou Interface de Transporte Previsto**|Ponto|Traço contínuo|0.53|0;0;0|255;255;255|Quadrado - Dimensão: 3,5 mm|![](media/image59.jpg)|Ordenamento|
+|35|**Via-Férrea**|Linha|Linha composta|-|0;0;0|0;0;0 / 255;255;255|Composição da linha:<br />Traço contínuo - Cor: 0;0;0, Espessura: 1,0 mm<br />Traço descontínuo sobreposto - Cor: 255;255;255, Espessura: 0,53 mm; Traço: 3.0 mm; Espaçamento: 5.0 mm|![](media/image60.jpg)|Ordenamento|
+|36|**Via-Férrea Prevista**|Linha|Linha composta|-|0;0;0|255;255;255 / 0;0;0|Composição da linha:<br />Traço contínuo - Cor: 0;0;0, Espessura: 1,0 mm<br />Traço descontínuo sobreposto - Cor: 255;255;255, Espessura: 0,53 mm; Traço: 12.0 mm; Espaçamento: 4.0 mm|![](media/image61.jpg)|Ordenamento|
 
 <br />
 <br />
@@ -753,144 +757,6 @@ imprescindível para sua leitura.
 <table>
 <tbody>
 
-<tr class="even">
-<td><blockquote>
-<p>33</p>
-</blockquote></td>
-<td><blockquote>
-<p><strong>Estação ou Interface de Transporte</strong></p>
-</blockquote></td>
-<td>Ponto</td>
-<td>Traço contínuo</td>
-<td><strong>─</strong></td>
-<td><blockquote>
-<p>0;0;0</p>
-</blockquote></td>
-<td><blockquote>
-<p><img src="media/image60.jpg" /></p>
-<p>0;0;0</p>
-</blockquote></td>
-<td><blockquote>
-<p>Quadrado - Dimensão: 3,5 mm</p>
-</blockquote></td>
-<td><blockquote>
-<p><img src="media/image61.jpg"
-style="width:0.3013in;height:0.2576in" /><img
-src="media/image60.jpg" /></p>
-</blockquote></td>
-<td>- Ordenamento</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<colgroup>
-<col style="width: 4%" />
-<col style="width: 13%" />
-<col style="width: 5%" />
-<col style="width: 8%" />
-<col style="width: 7%" />
-<col style="width: 7%" />
-<col style="width: 9%" />
-<col style="width: 21%" />
-<col style="width: 15%" />
-<col style="width: 7%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th></th>
-<th></th>
-<th colspan="5"><strong>CARACTERISTICAS GRÁFICAS</strong></th>
-<th><strong>SIMBOLOGIA</strong></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><blockquote>
-<p><strong>Código do</strong></p>
-</blockquote>
-<p><strong>Objeto</strong></p></td>
-<td><strong>Designação</strong></td>
-<td><blockquote>
-<p><strong>Geometria</strong></p>
-</blockquote></td>
-<td><strong>Estilo de Contorno</strong></td>
-<td><p><strong>Espessura de</strong></p>
-<p><strong>Contorno / Traço [mm]</strong></p></td>
-<td><blockquote>
-<p><strong>Cor de Contorno (RGB)</strong></p>
-</blockquote></td>
-<td><strong>Cor de Preenchimento (RGB)</strong></td>
-<td><strong>Especificações do Padrão / Símbolo / Texto/
-Linha</strong></td>
-<td>NOTA: A simbologia apresentada é meramente ilustrativa, podendo,
-nalguns objetos, não corresponder exatamente à descrição.</td>
-<td><strong>Planta</strong></td>
-</tr>
-<tr class="even">
-<td>34</td>
-<td><blockquote>
-<p><strong>Estação ou Interface de Transporte</strong></p>
-</blockquote>
-<p><strong>Previsto</strong></p></td>
-<td>Ponto</td>
-<td>Traço contínuo</td>
-<td>0.53</td>
-<td>0;0;0</td>
-<td>255;255;255</td>
-<td><blockquote>
-<p>Quadrado - Dimensão: 3,5 mm</p>
-</blockquote></td>
-<td><blockquote>
-<p><img src="media/image62.jpg"
-style="width:0.24725in;height:0.25094in" /></p>
-</blockquote></td>
-<td>- Ordenamento</td>
-</tr>
-<tr class="odd">
-<td>35</td>
-<td><strong>Via-Férrea</strong></td>
-<td>Linha</td>
-<td>Linha composta</td>
-<td><strong>─</strong></td>
-<td>0;0;0</td>
-<td>0;0;0 / 255;255;255</td>
-<td><blockquote>
-<p>Composição da linha:</p>
-<p>Traço contínuo - Cor: 0;0;0, Espessura: 1,0 mm</p>
-<p>Traço descontínuo sobreposto - Cor: 255;255;255, Espessura: 0,53 mm;
-Traço: 3.0 mm; Espaçamento: 5.0 mm</p>
-</blockquote></td>
-<td><blockquote>
-<p><img src="media/image63.jpg"
-style="width:0.86929in;height:0.42819in" /></p>
-</blockquote></td>
-<td><blockquote>
-<p>- Ordenamento - Condicionantes</p>
-</blockquote></td>
-</tr>
-<tr class="even">
-<td>36</td>
-<td><strong>Via-Férrea Prevista</strong></td>
-<td>Linha</td>
-<td>Linha composta</td>
-<td><strong>─</strong></td>
-<td>0;0;0</td>
-<td>255;255;255 /0;0;0</td>
-<td><blockquote>
-<p>Composição da linha:</p>
-<p>Traço contínuo - Cor: 0;0;0, Espessura: 1,0 mm</p>
-<p>Traço descontínuo sobreposto - Cor: 255;255;255, Espessura: 0,53 mm;
-Traço: 12.0 mm; Espaçamento: 4.0 mm</p>
-</blockquote></td>
-<td><blockquote>
-<p><img src="media/image64.jpg"
-style="width:1.30997in;height:0.59917in" /></p>
-</blockquote></td>
-<td>- Ordenamento</td>
-</tr>
 <tr class="odd">
 <td>37</td>
 <td><blockquote>
