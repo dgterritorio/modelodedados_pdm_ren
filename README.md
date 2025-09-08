@@ -44,11 +44,11 @@ Para dar cumprimento ao ponto 1 do aviso de aprovação, a disponibilização da
 
 Contém o modelo de dados para a estruturação em base de dados geográfica da informação que integra a planta de ordenamento e a planta de condicionantes do plano diretor municipal (PDM) ou intermunicipal (PDIM) bem como a organização dos objetos a representar, os quais podem, com as necessárias adaptações, ser aplicáveis aos demais planos territoriais bem como aos programas territoriais.
 
-### O documento PDF e conteúdos digitais transcritos para um documento atualizado e dados digitais reutilizáveis
+### O documento PDF e conteúdos digitais transcritos para um documento atualizável e dados digitais reutilizáveis
 
-### [***Norma Técnica do PDM - atualizada***](modelodedados_pdm/norma_pdm)
+### [***Norma Técnica do PDM***](modelodedados_pdm/norma_pdm)
 
-### [***Modelo de Dados do PDM - atualizado***](modelodedados_pdm)
+### [***Modelo de Dados do PDM***](modelodedados_pdm)
 
 *********************
 
@@ -63,11 +63,11 @@ Contém o modelo de dados e as especificações técnicas para a harmonização 
 
 Substituí a [versão anterior de 17.02.2020](https://www.dgterritorio.gov.pt/sites/default/files/publicacoes/NormasEspecificacoes_REN_08022020.pdf) aprovada na 23.ª reunião ordinária da Comissão Nacional do Território (CNT) de 17 de fevereiro de 2020.
 
-### O documento PDF e conteúdos digitais transcritos para um documento atualizado e dados digitais reutilizáveis
+### O documento PDF e conteúdos digitais transcritos para um documento atualizável e dados digitais reutilizáveis
 
-### [***Norma Técnica da REN - atualizada***](modelodedados_ren/norma_ren)
+### [***Norma Técnica da REN***](modelodedados_ren/norma_ren)
 
-### [***Modelo de Dados da REN - atualizado***](modelodedados_ren)
+### [***Modelo de Dados da REN***](modelodedados_ren)
 
 *********************
 
@@ -79,6 +79,6 @@ Para apoiar o utilizador no processo de submissão no Sistema de Submissão Auto
 
 [**SSAIGT - REN Manual do utilizador.pdf**](https://ssaigt.dgterritorio.pt/Manuais_SSAIGT/Manual_SSAIGT-REN.pdf)
 
-### O documento PDF transcrito para um documento atualizado
+### O documento PDF transcrito para um documento atualizável
 
-### [***Manual do utilizador do SSAIGT da REN - atualizado***](modelodedados_ren/manual_ssaigt_ren)
+### [***Manual do utilizador do SSAIGT da REN***](modelodedados_ren/manual_ssaigt_ren)
