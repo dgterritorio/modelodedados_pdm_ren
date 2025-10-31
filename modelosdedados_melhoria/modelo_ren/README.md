@@ -2,29 +2,31 @@
 
 Para apoio à criação e configuração da base de dados da REN a Direção-Geral do Território desenvolveu um modelo de dados (MD) no formato aberto da OGC, [GeoPackage](https://www.geopackage.org/) (GPKG), que se encontra disponível para descarregamento neste repositório.
 
-Este repositório contém as pastas e ficheiros seguintes:
+Para apoio à criação e configuração da base de dados da REN a Direção-Geral do Território desenvolveu um modelo de dados (MD) no formato open source GeoPackage (GPK), que se encontra disponível para descarregamento neste repositório.
 
-* estilos > `ren_qgis_symbols.xml` > ficheiro com a simbologia dos objetos
+Descrição do conteúdo das pastas e ficheiros do repositório:
 
-* estilos > `REN_Estilos_QGIS.zip` > Contem um projeto QGIS e um Modelo com os estilos da REN
+* estilos > `ren_qgis_symbols.xml` - ficheiro onde é definida a simbologia dos objetos
 
-* `exemplos` > vários ficheiros com exemplos de cartas de delimitação da REN estruturadas de acordo com a nova proposta de MD
+* estilos > `REN_Estilos_QGIS.zip` - contem um projeto em QGIS e um Modelo com os estilos da REN
 
-* `media` > pasta de imagens associadas README.md 
+* `exemplos` - exemplos de cartas de delimitação da REN estruturadas de acordo com a nova proposta de MD
 
-* modelo > `REN_modelo.qgs` > projeto modelo para criação da base de dados
+* `media` - pasta de imagens associadas README.md 
 
-* modelo > `ren_modelo_gpkg.gpkg` > modelo da base de dados em GeoPackage
+* modelo > `REN_modelo.qgs` - projeto modelo para criação da base de dados
 
-* plugin_qgis > `ren_importar_md.zip` > plugin para converter os dados de origem para o modelo
+* modelo > `ren_modelo_gpkg.gpkg` - modelo da base de dados em GeoPackage
 
-* sql > `ren_modelo_gpkg.gpkg.sql` > contém a estrutura da base de dados modelo, descrevendo as tabelas, vistas e triggers para cálculo automático de áreas e comprimentos
+* plugin_qgis > `ren_importar_md.zip` - plugin para converter os dados de origem para o modelo
 
-* sql > `ren_modelo_postgres.sql` > versão preliminarda estrutura da base de dados modelo para postegresql
+* sql > `ren_modelo_gpkg.gpkg.sql` - contém a estrutura da base de dados modelo, descrevendo as tabelas, vistas e triggers para cálculo automático de áreas e comprimentos
 
-* `LICENSE` > Licença de utilização de software livre GNU AGPLv3
+* sql > `ren_modelo_postgres.sql` - versão preliminar do modelo da base de dados em Postgres/Postgis
 
-* `README.md` > Explicação do conteúdo da página Proposta de melhoria do Modelo de Dedos da REN em GeoPackage
+* `LICENSE` - Licença de utilização de software livre GNU AGPLv3
+
+* `README.md` - Explicação do conteúdo da página Proposta de melhoria do Modelo de Dados da REN em GeoPackage
 
 ---
 
@@ -44,19 +46,19 @@ Para efeitos de exemplificação de uso do modelo de REN proposto, são apresent
 
 ### Tabelas
 
-- `codigo_ine`  
+- `codigo_ine`
    Lista os municípios e respetivos códigos da divisão administrativa do Instituto Nacional de Estatística (DTCC).
-- `atribuir_concelho`  
+- `atribuir_concelho`
    Faz a ligação entre o código DTCC e a estrutura do GeoPackage.
-- `catalogo`  
+- `catalogo`
    Contém a lista de objetos e organização previstos no catálogo de objetos da carta da REN.
-- `det_tip_l` e `tip_l`  
+- `tip_l` e `det_tip_l`
    Contém os objetos com **geometria linear** (MULTILINESTRING), com triggers para cálculo automático de comprimento.
-- `det_tip_p` e `tip_p`  
+- `tip_p` e `det_tip_p`
    Contém os objetos com  **geometria poligonal** que correspondem às tipologias antes de serem ponderadas as exclusões (MULTIPOLYGON), com triggers para cálculo automático de área.
-- `det_excl_p` e `excl_p`  
+- `excl_p` e `det_excl_p`
    Contém os objetos com geometria poligonal que correspondem às áreas de **exclusão**, com triggers automáticos para cálculo de áreas.
-- `ato_especifico`  
+- `ato_especifico`
    Regista os atos administrativos de publicação de cada dinâmica de REN.
 
 ---
@@ -77,6 +79,8 @@ Permitem a análise e consulta dos dados do catálogo de objetos e do quadro ane
    Lista os objetos com geometria poligonal que correspondem às exclusões.
 - `quadro_anexo`  
    Quadro com informação descritiva sobre as exclusões da REN.
+
+Diagrama da Base de dados
 
 ![ren_diagrama_gpkg.png](media/ren_diagrama_gpkg.png)
 
