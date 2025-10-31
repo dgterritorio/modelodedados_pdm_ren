@@ -1,0 +1,93 @@
+"id","tema_condicionantes","subtema_condicionantes","objeto_designacao","objeto_codigo"
+1,"Área de Intervenção do Plano","Área de Intervenção do Plano","Área de Intervenção do Plano",1
+49,"Infraestruturas","Rede Ferroviária","Via-Férrea",35
+59,"Infraestruturas","Abastecimento de Água","Captação, Tratamento ou Armazenamento de Água",41
+61,"Infraestruturas","Drenagem de Águas Residuais","Bombagem ou Tratamento de Águas Residuais",45
+63,"Infraestruturas","Recolha e Tratamento de Resíduos Sólidos","Estação de Tratamento de Resíduos Sólidos",47
+65,"Infraestruturas","Rede Elétrica","Infraestrutura de Produção ou Transformação de Energia Elétrica",49
+67,"Recursos Hídricos","Domínio Público Hídrico","Leito e Margem das Águas do Mar",53
+68,"Recursos Hídricos","Domínio Público Hídrico","Leito e Margem das Águas Fluviais",54
+69,"Recursos Hídricos","Domínio Público Hídrico","Zona Contígua à Margem",55
+70,"Recursos Hídricos","Domínio Público Hídrico","Zona Adjacente",56
+71,"Recursos Hídricos","Albufeiras, Lagos ou Lagoas de Águas Públicas","Albufeira Classificada",57
+72,"Recursos Hídricos","Albufeiras, Lagos ou Lagoas de Águas Públicas","Lago ou Lagoa classificada",58
+73,"Recursos Hídricos","Albufeiras, Lagos ou Lagoas de Águas Públicas","Zona Terrestre de Proteção",59
+74,"Recursos Hídricos","Albufeiras, Lagos ou Lagoas de Águas Públicas","Zona Reservada da Zona Terrestre de Proteção",60
+75,"Recursos Hídricos","Albufeiras, Lagos ou Lagoas de Águas Públicas","Zona de Proteção da Barragem",61
+76,"Recursos Hídricos","Albufeiras, Lagos ou Lagoas de Águas Públicas","Zona de Respeito da Barragem",62
+77,"Recursos Geológicos","Captações de Águas Subterrâneas para Abastecimento Público","Perímetro de Proteção de Captação de Água Subterrânea",63
+78,"Recursos Geológicos","Águas de Nascente","Perímetro de Proteção de Águas da Nascente",64
+79,"Recursos Geológicos","Águas Minerais Naturais","Perímetro de Proteção de Águas Minerais Naturais",65
+80,"Recursos Geológicos","Pedreiras","Zona de Defesa / Zona Especial de Defesa",66
+81,"Recursos Geológicos","Pedreiras","Área Cativa / Área de Reserva",67
+82,"Recursos Geológicos","Recursos Geológicos","Área de Servidão de Recurso Geológico",142
+83,"Recursos Agrícolas e Florestais","Reserva Agrícola Nacional","Reserva Agrícola Nacional",68
+84,"Recursos Agrícolas e Florestais","Reserva Agrícola Nacional","Área Excluida da Reserva Agrícola Nacional",69
+85,"Recursos Agrícolas e Florestais","Obras de Aproveitamento Hidroagrícola","Perímetro Hidroagrícola",70
+86,"Recursos Agrícolas e Florestais","Oliveiras","Povoamento de Oliveiras",71
+87,"Recursos Agrícolas e Florestais","Sobreiros ou Azinheiras","Povoamento de Sobreiros ou Azinheiras",72
+88,"Recursos Agrícolas e Florestais","Sobreiros ou Azinheiras","Área onde tenham ocorrido Incêndios,Depreciação do Arvoredo ou Abates Ilegais",73
+89,"Recursos Agrícolas e Florestais","Azevinho","Povoamento de Azevinho",74
+90,"Recursos Agrícolas e Florestais","Regime Florestal","Regime Florestal Total",75
+91,"Recursos Agrícolas e Florestais","Regime Florestal","Regime Florestal Parcial",76
+92,"Recursos Agrícolas e Florestais","Povoamentos Florestais Percorridos por Incêndio","Povoamento Florestal Percorrido por Incêndio",77
+93,"Recursos Agrícolas e Florestais","Protecção ao Risco de Incêndio","Classe de Risco de Incêndio (alta ou muito alta)",78
+94,"Recursos Agrícolas e Florestais","Protecção ao Risco de Incêndio","Zona critica",79
+95,"Recursos Agrícolas e Florestais","Protecção ao Risco de Incêndio","Redes de Faixas de Gestão de Combustível (rede primária e secundária)",80
+96,"Recursos Agrícolas e Florestais","Árvores e Arvoredo de Interesse Público","Árvore ou Arvoredo de Interesse Público",81
+97,"Recursos Ecológicos","Reserva Ecológica Nacional","Reserva Ecológica Nacional",148
+98,"Recursos Ecológicos","Reserva Ecológica Nacional","Área Excluida da Reserva Ecológica Nacional",82
+99,"Recursos Ecológicos","Áreas Protegidas","Parque Nacional",83
+100,"Recursos Ecológicos","Áreas Protegidas","Parque Natural",84
+101,"Recursos Ecológicos","Áreas Protegidas","Reserva Natural",85
+102,"Recursos Ecológicos","Áreas Protegidas","Monumento Natural",86
+103,"Recursos Ecológicos","Áreas Protegidas","Paisagem Protegida (de interesse regional ou local)",87
+104,"Recursos Ecológicos","Rede Natura 2000","Sítio da Lista Nacional",88
+105,"Recursos Ecológicos","Rede Natura 2000","Zona Especial de Conservação",89
+106,"Recursos Ecológicos","Rede Natura 2000","Zona de Proteção Especial",90
+107,"Património Cultural","Patrimínio Arqueológico","Parque Arqueológico",141
+108,"Património Cultural","Imóveis Classificados","Monumento Nacional",91
+109,"Património Cultural","Imóveis Classificados","Imóvel de Interesse Público",92
+110,"Património Cultural","Imóveis Classificados","Imóvel de Interesse Municipal",93
+111,"Património Cultural","Imóveis Classificados","Imóvel em Vias De Classificação",94
+112,"Património Cultural","Imóveis Classificados","Zona Geral de Proteção",95
+113,"Património Cultural","Imóveis Classificados","Zona Especial de Proteção Provisória",96
+114,"Património Cultural","Imóveis Classificados","Zona Especial de Proteção",97
+115,"Património Cultural","Edifícios Públicos e Outras Construções","Zona de Proteção de Edifício Público ou de Outra Construção",98
+116,"Equipamentos","Estabelecimentos Prisionais e Tutelares de Menores","Zona de Proteção de Estabelecimento Prisional ou Tutelar de Menores",99
+117,"Equipamentos","Instalações Aduaneiras","Área de Jurisdição de Alfândega",100
+118,"Equipamentos","Defesa Nacional","Zona de Servidão Militar",101
+119,"Infraestruturas","Abastecimento de Água","Conduta Adutora",43
+120,"Infraestruturas","Abastecimento de Água","Zona de Servidão de Abastecimento de Água",102
+121,"Infraestruturas","Drenagem de Águas Residuais","Colector de Águas Residuais",44
+122,"Infraestruturas","Drenagem de Águas Residuais","Zona de Servidão de Drenagem de Águas Residuais",103
+123,"Infraestruturas","Rede Elétrica","Infraestrutura de Transporte de Energia Eletrica",51
+124,"Infraestruturas","Rede Elétrica","Zona de Servidão de Rede Elétrica",104
+125,"Infraestruturas","Gasodutos e Oleodutos","Gasoduto ou Oleoduto",52
+126,"Infraestruturas","Gasodutos e Oleodutos","Infraestrutura Associada a Gasoduto ou Oleoduto",137
+127,"Infraestruturas","Gasodutos e Oleodutos","Zona de Servidão de Gasoduto ou Oleoduto",105
+128,"Infraestruturas","Rede Rodoviária Nacional e Regional","Itinerário Principal",106
+129,"Infraestruturas","Rede Rodoviária Nacional e Regional","Itinerário Principal Autoestrada",107
+130,"Infraestruturas","Rede Rodoviária Nacional e Regional","Itinerário Complementar",108
+131,"Infraestruturas","Rede Rodoviária Nacional e Regional","Itinerário Complementar Autoestrada",109
+132,"Infraestruturas","Rede Rodoviária Nacional e Regional","Estrada Nacional",110
+133,"Infraestruturas","Rede Rodoviária Nacional e Regional","Estrada Regional",111
+134,"Infraestruturas","Rede Rodoviária Nacional e Regional","Estrada em Projeto",143
+135,"Infraestruturas","Rede Rodoviária Nacional e Regional","Zona de Servidão de Estrada do Plano Rodoviário Nacional",112
+136,"Infraestruturas","Rede Rodoviária Nacional e Regional","Zona de Respeito de Estrada do Plano Rodoviário Nacional",144
+137,"Infraestruturas","Estradas Nacionais Desclassificadas","Estradas Nacionais Desclassificadas",113
+138,"Infraestruturas","Estradas Nacionais Desclassificadas","Zona de Servidão de Estrada Nacional Desclassificada",114
+139,"Infraestruturas","Estradas e Caminhos Municipais","Estrada Municipal",115
+140,"Infraestruturas","Estradas e Caminhos Municipais","Caminho Municipal",116
+141,"Infraestruturas","Estradas e Caminhos Municipais","Zona de Servidão de Estrada ou Caminho Municipal",117
+142,"Infraestruturas","Rede Ferroviária","Zona de Servidão de Via-Férrea",118
+143,"Infraestruturas","Aeroportos e Aeródromos","Zona de Servidão Aeronaútica",119
+144,"Infraestruturas","Telecomunicações","Zona de Servidão Radioeléctrica",120
+145,"Infraestruturas","Faróis e Outros Sinais Marítimos","Farol ou Outro Sinal Marítimo",121
+146,"Infraestruturas","Faróis e Outros Sinais Marítimos","Zona de Servidão de Sinalização Maritima",122
+147,"Infraestruturas","Rede Geodésica","Zona de Proteção da Rede Geodésica",123
+148,"Infraestruturas","Rede Geodésica","Marco Geodésico",124
+149,"Atividades Perigosas","Substâncias Perigosas","Estabelecimento com Produtos Explosivos",125
+150,"Atividades Perigosas","Substâncias Perigosas","Zona de Segurança de Estabelecimento com Produtos Explosivos",126
+151,"Atividades Perigosas","Substâncias Perigosas","Estabelecimento com Substâncias Perigosas",127
+152,"Atividades Perigosas","Substâncias Perigosas","Zona de Segurança de Estabelecimento com Substâncias Perigosas",128

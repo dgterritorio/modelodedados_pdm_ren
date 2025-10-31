@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ajuda - PDM: Importar para o Modelo de Dados (gpkg)</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; line-height:1.45; color:#222; padding:18px; }
+    header { border-bottom: 1px solid #ddd; margin-bottom:14px; padding-bottom:8px; }
+    h1 { font-size:1.4rem; margin:0 0 6px 0; }
+    h2 { font-size:1.05rem; margin:16px 0 6px; color:#0b5; }
+    nav { margin: 8px 0 16px; }
+    nav a { text-decoration:none; color:#036; margin-right:12px; }
+    section { margin-bottom:14px; padding:10px 8px; background:#fbfbfb; border:1px solid #eee; border-radius:6px; }
+    .kbd { font-family:monospace; background:#eee; padding:2px 6px; border-radius:4px; }
+    .kbr { font-family:monospace; background:#f5abab; padding:2px 6px; border-radius:4px; }
+    .note { background:#fff8d6; padding:8px; border-left:4px solid #ffd54f; margin:8px 0; }
+    ul { margin:6px 0 6px 18px; }
+    .example { font-size:0.95rem; padding:8px; background:#f4f8ff; border:1px dashed #cfe; border-radius:6px; }
+    footer { margin-top:18px; font-size:0.85rem; color:#666; border-top:1px solid #eee; padding-top:8px; }
+    a.external { color:#0a63a8; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PDM - Importar para o Modelo de Dados (GeoPackage)</h1>
+    <div>Ajuda rápida e explicação das funcionalidades</div>
+  </header>
+
+  <nav>
+    <a href="#overview">Visão geral</a></br>
+    <a href="#iniciar">Abrir / Painel de Ajuda</a></br>
+    <a href="#descarregar-modelo">Descarregar Modelo PDM</a></br>
+    <a href="#config">Configuração dados do modelo</a></br>
+    <a href="#fontes">Adicionar Fontes</a></br>
+    <a href="#mapear-valores">Mapeamento</a></br>
+    <a href="#exec">Executar Importação</a></br>
+    <a href="#registo">Registo & Informações</a></br>
+    <a href="#resolucao-problemas">Resolução de Problemas (FAQ)</a>
+  </nav>
+
+  <section id="overview">
+    <h2>Visão geral</h2>
+    <p>Este plugin permite importar dados de tabelas .SHP .GPKG .MPK .CSV e pasta .GDB para o Modelo de Dados (GeoPackage) definido para PDM. Inclui ferramentas para:</p>
+    <ul>
+      <li>Selecionar o GeoPackage modelo (p.ex. <span class="kbd">objeto_ponto</span> <span class="kbd">objeto_linha</span> <span class="kbd">objeto_poligono</span>).</li>
+      <li>Adicionar camadas/tabelas de origem (shp, gpkg, mpk, csv, (pasta).GDB).</li>
+      <li>Mapear campos da origem para campos do modelo e, quando aplicável, mapear valores para códigos do catálogo.</li>
+      <li>Mapeamento automático por similaridade de textos (ajustável por rácio).</li>
+      <li>Filtrar linhas por tipo de geometria, visualizar catálogos, e guardar/carregar configurações em JSON.</li>
+    </ul>
+    <p>Botoes:</p>
+    <ul>
+      <li><img src="img/mActionFileSave.svg" alt="" style="width:24px;height:24px;"> Botão para guardar configuração num ficheiro JSON</li>
+      <li><img src="img/mActionFileOpen.svg" alt="" style="width:24px;height:24px;"> Botão para carregar configuração do ficheiro JSON, guardado previamente</li>
+      <li><img src="img/zip.svg" alt="" style="width:24px;height:24px;"> Botão para descarregar o modelo em formato zip (pdm_modelo.zip)</li>
+      <li><img src="img/mActionHelpContents.svg" alt="" style="width:24px;height:24px;"> Botão para abrir/fechar a ajuda</li>
+      <li><img src="img/mActionOpenTable.svg" alt="" style="width:24px;height:24px;"> Botão para abrir tabela de atributos</li>
+      <li><img src="img/mIconFieldText.svg" alt="" style="width:24px;height:24px;">  Botão para abrir valores da coluna</li>
+    </ul>
+
+    <p class="note">O painel lateral é onde surge a ajuda.</p>
+  </section>
+
+  <section id="iniciar">
+    <h2>Abrir / Painel de Ajuda</h2>
+    <p>Na barra de ferramentas da janela "principal" existe um botão <strong>Ajuda</strong> <img src="img/mActionHelpContents.svg" alt="" style="width:24px;height:24px;">. Ao activá-lo, o painel lateral é aberto/fechado.</p>
+    <ul>
+      <li>Ícone Ajuda: alterna o painel lateral.</li>
+    </ul>
+  </section>
+
+  <section id="descarregar-modelo">
+    <h2>Descarregar Modelo PDM</h2>
+    <p>Existe um botão na toolbar para guardar uma cópia do ficheiro modelo (`pdm_modelo.zip`) presente na pasta do plugin. Se o ficheiro não existir, o plugin avisa através do log e da barra de mensagens do QGIS.</p>
+  </section>
+
+  <section id="config">
+    <h2>Configuração dados do modelo</h2>
+    <p>Passos básicos:</p>
+    <ol>
+      <li><strong>Selecionar GeoPackage (Modelo)</strong> <br/>- Se estiver carregado nas camadas no QGIS este passo é automático (recomendado). <br/>- clicar <span class="kbd">Selecionar GeoPackage (Modelo)</span> e escolher o ficheiro .gpkg com o modelo (destino). O plugin valida permissões de escrita e lista as tabelas esperadas.</li>
+      <li><strong>Escolher tabela destino</strong> <br/>- escolher entre <span class="kbd">objeto_ponto</span>, <span class="kbd">objeto_linha</span> ou <span class="kbd">objeto_poligono</span> conforme o tipo de geometria a importar.</li>
+      <li><strong>DTCC / Planta</strong> <br/>- se presentes no GPKG, preenche automaticamente as opções de município (DTCC) e planta. Escolher o DTCC pretendido e a planta <span class="kbd">Condicionantes</span> ou <span class="kbd">Ordenamento</span></li>
+      <li><strong>Catálogo</strong> <br/>- clicar no botão <span class="kbd">Ver Catálogo (modelo)</span> para ver o catálogo, este é dinâmico, em função da tabela <span class="kbd">objeto_[...]</span> escolhida e o tipo de planta, os valores são atualizados.</li>
+    </ol>
+  </section>
+
+  <section id="fontes">
+    <h2>Adicionar Fontes (Dados de Origem)</h2>
+    <p>O plugin suporta:</p>
+    <span class="kbd">Adicionar Tabelas de Origem</span>
+    <ul>
+      <li><strong>.gpkg</strong> - importa todas as camadas existentes no GeoPackage selecionado.</li>
+      <li><strong>.shp</strong> - carrega shapefiles individuais.</li>
+      <li><strong>.mpk</strong> - procura internamente por shapefiles dentro do pacote.</li>
+      <li><strong>.csv</strong> - carrega ficheiros como camadas de texto delimitado.</li>
+    </ul>
+    <span class="kbd">Adicionar pasta GDB</span>
+    <ul>
+      <li><strong>File Geodatabase (.gdb)</strong> - é possível carregar as camadas presentes na pasta.gdb.</li>
+    </ul>
+    <p>Depois de carregadas, as tabelas de origem aparecem no menu <span class="kbd">Ver tabela(s) de origem carregada(s)</span> onde pode ser visualizada a lista. <br/>O plugin tenta obter o sistema de coordenadas e tipo de geometria automaticamente.</p>
+  </section>
+
+  <section id="mapear-valores">
+    <h2>Mapeamento</h2>
+    <p>Há três formas de mapeamentos possiveis.</p>
+    <p>Os mapeamentos são feitos com base no campo <span class="kbd">codigo</span> do catálogo de objetos e a coluna ou tabela de origem.</p>
+    <p>Os mapeamentos automáticos utilizam o rácio de similaridade e é ajustável (por defeito 0.7). O algoritmo usa uma comparação de sequência e regista no log o mapeamento automático efetuado.</p>
+    <ol>
+      <li><span class="kbd">Mapear Automaticamente (por semelhança dos nomes)</span>
+      <br/>- este vai tentar mapear as colunas da tabela do modelo e a coluna correspondente na tabela de origem. Ou com o nome da própria tabela de origem.
+      </li>
+      <li><strong>Adicionar linhas para mapeamento</strong> <br/>- usar <span class="kbd">Adicionar Linha</span> para criar um mapeamento: <span class="kbd">Coluna do Modelo</span> → <span class="kbd">Tabela de Origem</span> → <span class="kbd">Coluna de Origem</span> → (opcional) <span class="kbd">Código (substituição)</span> <span class="kbr">Caso este seja preenchido será o valor usado na importação.</span></li>
+      <li>Nos casos em que a tabela já tem uma coluna com os códigos e/ou designações (categorização), a coluna <span class="kbd">Ações</span> tem o botão <span class="kbd">Mapear</span>.
+        <ul>
+          <li>escolher manualmente o <em>código</em> correspondente (lista de código na linha).</li>
+          <li>usar o botão <strong>Mapear Valores Automaticamente</strong> para fazer correspondência entre valores de origem e designações do catálogo com base num rácio de similaridade (0.0–1.0).</li>
+          <li>depois do mapeamento correcto, clicar em <span class="kbd">OK</span> os valores serão enviados para a coluna<span class="kbd">Mapeamento Valores (valor_origem:codigo)</span>. <span class="kbr">Esta correspondência será a que vai ser importadada para o modelo.</span></li>
+        </ul>
+      </li>
+    </ol>
+
+
+
+
+
+    <div class="example">
+      Exemplo: se o valor de origem for "Espaços Centrais" e no catálogo "Espaço Central", um rácio de 0.7 vai considerar isto uma correspondência e sugerir o código correspondente.
+    </div>
+    <div class="example">
+      Dica: ao adicionar uma linha, o botão na <span class="kbd">Tabela de Origem</span> permite abrir a tabela de atributos <img src="img/mActionOpenTable.svg" alt="" style="width:24px;height:24px;">; <br/>O botão na <span class="kbd">Coluna de Origem</span> mostra os <strong>valores únicos</strong> dessa coluna (útil para preparar o mapeamento de valores) <img src="img/mIconFieldText.svg" alt="" style="width:24px;height:24px;">.
+    </div>
+  </section>
+
+  <section id="filtros">
+    <h2>Filtrar por Tipo de Geometria</h2>
+    <p>A tabela de mapeamento tem uma coluna <span class="kbd">Tipo de Geometria</span> e um menu de filtro no cabeçalho que permite:</p>
+    <ul>
+      <li>Mostrar todas as linhas.</li>
+      <li>Selecionar apenas linhas com um determinado tipo de geometria (p.ex. point / line / polygon).</li>
+    </ul>
+    <p>As opções do filtro são atualizadas dinamicamente com base nos valores presentes na tabela de mapeamento e o estado do filtro é registado no log.</p>
+  </section>
+
+  <section id="exec">
+    <h2>Guardar/Carregar Configuração e Executar Importação</h2>
+    <p><strong>Guardar Configuração:</strong> cria um ficheiro JSON com o mapeamento actual (inclui caminhos das fontes, mapeamentos por linha, DTCC, planta e rácio de similaridade).</p>
+    <p><strong>Carregar Configuração:</strong> importa um ficheiro JSON e tenta preencher a interface com as definições guardadas (avisa se a versão de configuração for diferente).</p>
+    <p><strong>Executar Importação:</strong> quando todos os mapeamentos estiverem definidos, clicar em <span class="kbd">Executar Importação</span> iniciará o processo de validação/importação dos elementos para o GeoPackage destino conforme o mapeamento.</p>
+    <div class="note">Antes de executar, assegurar que o GeoPackage destino tem permissões de escrita e que está seleccionada a tabela de destino correcta.</div>
+  </section>
+
+  <section id="registo">
+    <h2>Registo & Depuração</h2>
+    <p>O plugin inclui um separador <span class="kbd">Registo</span> (Log) onde são anexadas mensagens com data/hora. Funcionalidades:</p>
+    <ul>
+      <li>Ver eventos, avisos e erros com data/hora.</li>
+      <li>Guardar o conteúdo do log para um ficheiro .txt (botão <span class="kbd">Guardar Log</span>).</li>
+      <li>Mensagens informativas são também mostradas na barra de mensagens do QGIS quando apropriado.</li>
+    </ul>
+  </section>
+
+  <section id="resolucao-problemas">
+    <h2>Resolução de Problemas (FAQ)</h2>
+    <ul>
+      <li><strong>Não encontro as tabelas no GeoPackage:</strong> assegurar que o GeoPackage está carregado no mapa ou selecciona-lo manualmente com <span class="kbd">Selecionar GeoPackage (Modelo)</span>.</li>
+      <li><strong>Ficheiro mpk não carrega:</strong> verificar a instalação do GDAL e se o plugin tem acesso ao VFS (/vsi7z/).</li>
+      <li><strong>Erro ao escrever no GeoPackage:</strong> confirmar permissões do ficheiro e que o ficheiro não está em utilização por outro processo.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <div>Versão do Plugin: <strong>Ver código fonte</strong></div>
+    <div>Contacto: <em>mail@mail.com</em>.</div>
+    <div style="margin-top:6px; font-size:0.9rem; color:#444">
+      Nota técnica: 
+    </div>
+  </footer>
+</body>
+</html>
