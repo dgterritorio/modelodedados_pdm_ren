@@ -8,23 +8,23 @@ Este plugin permite auxiliar o utilizador a estruturar e carregar de forma inter
 
 ## Instalar o Plugin QGIS
 
-1. Descarregar e guardar no computador o plugin clicando no link: [ren_importar_md.zip](ren_importar_md.zip)
+1. Descarregar e guardar no computador o plugin `ren_importar_md.zip` [(localizado em plugin_qgis)](ren_importar_md.zip)
 
-2. Abrir o QGIS (recomendamos uma versão igual ou superior 3.40.11)
+2. Abrir o QGIS (recomenda-se uma versão igual ou superior a 3.40.11)
 
-3. Instalar o plugin descarregado - `ren_importar_md.zip`
-
-   - Seguir os passos da seguinte imagem
+3. Instalar o Plugin > ver imagem seguinte
 
 ![instalar_plugin_qgis_ren.png](media/instalar_plugin_qgis_ren.png)
 
-   - O plugin fica disponivel no separador `Plugins` e `Barra de ferramentas de plugins`
+   - O plugin fica disponivel no separador `Plugins` e na `Barra de ferramentas de plugins` no botão ![ren.png](media/ren.png)
 
 ![abrir_plugin_qgis_ren.png](media/abrir_plugin_qgis_ren.png)
 
 Aspeto da interface do plugin
 
 ![interface_plugin_ren.png](media/interface_plugin_ren.png)
+
+---
 
 ## Utilização do Plugin QGIS
 
@@ -33,18 +33,16 @@ Aspeto da interface do plugin
 O procedimento para a conversão de uma base de dados de origem para a base de dados modelo é o seguinte:
 
 
-1. Descarregar o ZIP clicando no botão ![zip.png](media/zip.png) do plugin  ou descarregar do repositório a pasta `modelo` para o computador e abrir o projeto REN_modelo.qgs
+1. Descarregar o ZIP clicando no botão ![zip.png](media/zip.png) do plugin ou descarregar do repositório a pasta `modelo` para o computador e abrir o projeto REN_modelo.qgs
 
-2. Ativar o PlugIn
+2. Selecionar o plugin REN_importar_MD no Separador Plugins ou na Barra de ferramentas
 
-3. Executar o PlugIn e analisar os resultados 
+3. Executar o PlugIn > [**ver vídeo seguinte**](media/plugin.mp4) 
 
 ![plugin.gif](media/plugin.gif)
 
-[**Vídeo**](media/plugin.mp4)
-
 4. Gerar a sobreposição das tipologias com as exclusões (ativar o excl_tip)
 
-5. Visualizar o Quadro Anexo (ativar o quadro_anexo)
+5. Visualizar o Quadro Anexo
 
-6. Visualizar o Ato de Publicação (ativar o ato_especifico)
+6. Visualizar o Ato de Publicação
