@@ -3,7 +3,6 @@
 49,"Infraestruturas","Rede Ferroviária","Via-Férrea",35
 59,"Infraestruturas","Abastecimento de Água","Captação, Tratamento ou Armazenamento de Água",41
 61,"Infraestruturas","Drenagem de Águas Residuais","Bombagem ou Tratamento de Águas Residuais",45
-63,"Infraestruturas","Recolha e Tratamento de Resíduos Sólidos","Estação de Tratamento de Resíduos Sólidos",47
 65,"Infraestruturas","Rede Elétrica","Infraestrutura de Produção ou Transformação de Energia Elétrica",49
 67,"Recursos Hídricos","Domínio Público Hídrico","Leito e Margem das Águas do Mar",53
 68,"Recursos Hídricos","Domínio Público Hídrico","Leito e Margem das Águas Fluviais",54
@@ -45,7 +44,7 @@
 104,"Recursos Ecológicos","Rede Natura 2000","Sítio da Lista Nacional",88
 105,"Recursos Ecológicos","Rede Natura 2000","Zona Especial de Conservação",89
 106,"Recursos Ecológicos","Rede Natura 2000","Zona de Proteção Especial",90
-107,"Património Cultural","Patrimínio Arqueológico","Parque Arqueológico",141
+107,"Património Cultural","Património Arqueológico","Parque Arqueológico",141
 108,"Património Cultural","Imóveis Classificados","Monumento Nacional",91
 109,"Património Cultural","Imóveis Classificados","Imóvel de Interesse Público",92
 110,"Património Cultural","Imóveis Classificados","Imóvel de Interesse Municipal",93

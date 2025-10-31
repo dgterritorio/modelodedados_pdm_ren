@@ -17,9 +17,7 @@ Para o envio de contributos, comentários, sugestões e correções à presente 
 
 ## [2. Identificação de correções (Issues)](https://github.com/dgterritorio/modelodedados_pdm_ren/issues) 
 
+******
 
 ### ***Clique abaixo para consultar a Norma Técnica e documentação dos modelos em vigor.***
-
-*********************
-
-# [Em vigor: Norma Técnica dos Modelos de Dados do PDM e da REN](modelosdedados_emvigor)
+### [Em vigor: Norma Técnica dos Modelos de Dados do PDM e da REN](modelosdedados_emvigor)
