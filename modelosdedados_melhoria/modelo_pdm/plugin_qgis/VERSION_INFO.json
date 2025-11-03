@@ -1,0 +1,23 @@
+{
+  "plugin": {
+    "version": "1.0.1",
+    "changelog": [
+    "Adicionado verificador combinado de versões para identificação de versões do plugin e gpkg."
+    ],
+    "download_url": "https://github.com/dgterritorio/modelodedados_pdm_ren/raw/refs/heads/main/modelosdedados_melhoria/modelo_pdm/plugin_qgis/pdm_importar_md.zip"
+  },
+  "gpkg": {
+    "version": "1.0.1",
+    "changelog": [
+    "Adicionada a da tabela 'metadata' para verificação da versão do modelo de GPKG."
+    ],
+    "download_url": "https://github.com/dgterritorio/modelodedados_pdm_ren/raw/refs/heads/main/modelosdedados_melhoria/modelo_pdm/modelo/pdm_modelo_gpkg.gpkg"
+  },
+  "qgs": {
+    "version": "1.0.1",
+    "changelog": [
+      "Atualização dos estilos - remoção das etiquetas nos estilos em algumas tabelas."
+    ],
+    "download_url": "https://github.com/dgterritorio/modelodedados_pdm_ren/raw/refs/heads/main/modelosdedados_melhoria/modelo_pdm/modelo/PDM_modelo.qgs"
+  }
+}
