@@ -1,0 +1,22 @@
+{  "plugin": {
+    "version": "1.0.1",
+    "changelog": [
+    "Adicionado verificador combinado de versões para identificação de versões do plugin e gpkg."
+    ],
+    "download_url": "https://github.com/dgterritorio/modelodedados_pdm_ren/raw/refs/heads/main/modelosdedados_melhoria/modelo_ren/plugin_qgis/ren_importar_md.zip"
+  },
+  "gpkg": {
+    "version": "1.0.1",
+    "changelog": [
+    "Adicionada a da tabela 'metadata' para verificação da versão do modelo de GPKG."
+    ],
+    "download_url": "https://github.com/dgterritorio/modelodedados_pdm_ren/raw/refs/heads/main/modelosdedados_melhoria/modelo_ren/modelo/ren_modelo_gpkg.gpkg"
+  },
+  "qgs": {
+    "version": "1.0.1",
+    "changelog": [
+      "Ativada a camada 'excl_p' por defeito."
+    ],
+    "download_url": "https://github.com/dgterritorio/modelodedados_pdm_ren/raw/refs/heads/main/modelosdedados_melhoria/modelo_ren/modelo/REN_modelo.qgs"
+  }
+}
