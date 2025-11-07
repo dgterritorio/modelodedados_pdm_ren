@@ -1,21 +1,22 @@
 {  "plugin": {
-    "version": "1.0.1",
+    "version": "1.0.2",
     "changelog": [
-    "Adicionado verificador combinado de versões para identificação de versões do plugin e gpkg."
+    "Melhoria de usabilidade e identificação automática da camada de destino;
+Força o refresh para atualização de mapa/contagens/simbologia."
     ],
     "download_url": "https://github.com/dgterritorio/modelodedados_pdm_ren/raw/refs/heads/main/modelosdedados_melhoria/modelo_ren/plugin_qgis/ren_importar_md.zip"
   },
   "gpkg": {
-    "version": "1.0.1",
+    "version": "1.0.2",
     "changelog": [
-    "Adicionada a da tabela 'metadata' para verificação da versão do modelo de GPKG."
+    "Versão base do Modelo de Dados: - atualização da vista excl_tip adicionado o campo area_excl_tip; adicionada a coluna designacao às tabelas tip_l e det_tip_l."
     ],
     "download_url": "https://github.com/dgterritorio/modelodedados_pdm_ren/raw/refs/heads/main/modelosdedados_melhoria/modelo_ren/modelo/ren_modelo_gpkg.gpkg"
   },
   "qgs": {
-    "version": "1.0.1",
+    "version": "1.0.2",
     "changelog": [
-      "Ativada a camada 'excl_p' por defeito."
+      "Atualização das tabelas tip_l e det_tip_l e vista area_excl_tip."
     ],
     "download_url": "https://github.com/dgterritorio/modelodedados_pdm_ren/raw/refs/heads/main/modelosdedados_melhoria/modelo_ren/modelo/REN_modelo.qgs"
   }

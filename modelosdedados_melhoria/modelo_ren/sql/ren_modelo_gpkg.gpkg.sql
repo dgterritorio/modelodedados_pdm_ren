@@ -266,6 +266,7 @@ CREATE TABLE IF NOT EXISTS det_tip_l (
     geom     MULTILINESTRING,
     dtcc     TEXT NOT NULL,
     cod_obje INTEGER NOT NULL,
+    designacao TEXT,
     comp_m   REAL,
     ato_id   INTEGER,
     FOREIGN KEY (cod_obje) REFERENCES catalogo (cod_obje),
@@ -519,6 +520,7 @@ CREATE TABLE IF NOT EXISTS tip_l (
     geom     MULTILINESTRING,
     dtcc     TEXT NOT NULL,
     cod_obje INTEGER NOT NULL,
+    designacao TEXT,
     comp_m   REAL,
     ato_id   INTEGER,
     FOREIGN KEY (cod_obje) REFERENCES catalogo (cod_obje),
@@ -687,7 +689,7 @@ END;
 DROP VIEW IF EXISTS excl_tip;
 
 CREATE VIEW IF NOT EXISTS excl_tip AS
-    SELECT ROW_NUMBER() OVER() AS fid,
+    SELECT ROW_NUMBER() OVER () AS fid,
            t.fid AS fid_tip_p,
            e.fid AS fid_excl_p,
            ST_Intersection(t.geom, e.geom) AS geom,
@@ -696,8 +698,7 @@ CREATE VIEW IF NOT EXISTS excl_tip AS
            e.exclusao,
            e.fundamento,
            e.fim_dest,
-           t.area_m2 AS area_tip,
-           e.area_m2 AS area_excl,
+           ROUND(ST_Area(ST_Intersection(t.geom, e.geom)), 2) AS area_excl_tip,
            t.ato_id AS ato_tip,
            e.ato_id AS ato_excl
       FROM tip_p t

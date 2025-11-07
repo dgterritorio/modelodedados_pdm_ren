@@ -1,8 +1,9 @@
 {
   "plugin": {
-    "version": "1.0.1",
+    "version": "1.0.2",
     "changelog": [
-    "Adicionado verificador combinado de versões para identificação de versões do plugin e gpkg."
+    "Melhoria de usabilidade e identificação automática da camada de destino;
+Força o refresh para atualização de mapa/contagens/simbologia."
     ],
     "download_url": "https://github.com/dgterritorio/modelodedados_pdm_ren/raw/refs/heads/main/modelosdedados_melhoria/modelo_pdm/plugin_qgis/pdm_importar_md.zip"
   },
