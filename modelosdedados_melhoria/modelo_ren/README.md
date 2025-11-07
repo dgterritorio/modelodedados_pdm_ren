@@ -2,8 +2,6 @@
 
 Para apoio à criação e configuração da base de dados da REN a Direção-Geral do Território desenvolveu um modelo de dados (MD) no formato aberto da OGC, [GeoPackage](https://www.geopackage.org/) (GPKG), que se encontra disponível para descarregamento neste repositório.
 
-Para apoio à criação e configuração da base de dados da REN a Direção-Geral do Território desenvolveu um modelo de dados (MD) no formato open source GeoPackage (GPK), que se encontra disponível para descarregamento neste repositório.
-
 Descrição do conteúdo das pastas e ficheiros do repositório:
 
 * estilos > `ren_qgis_symbols.xml` - ficheiro onde é definida a simbologia dos objetos
