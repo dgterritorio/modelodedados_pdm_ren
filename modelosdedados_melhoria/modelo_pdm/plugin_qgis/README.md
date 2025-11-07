@@ -1,4 +1,4 @@
-# Plugin QGIS para auxiliar o carregamento de dados no Modelo de Dados do PDM em GeoPackage (Em Atualização)
+# Plugin QGIS para carregar dados para Modelo de Dados do PDM (Em Atualização)
 
 Para apoio aos utilizadores na criação de ficheiros Geopackage de acordo com o Modelo de Dados do PDM proposto, é disponibilizado gratuitamente pela Direção-Geral do Território um plugin para o sofwate livre [QGIS](https://qgis.org/) .
 
