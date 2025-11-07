@@ -1,8 +1,8 @@
 {  "plugin": {
     "version": "1.0.2",
     "changelog": [
-    "Melhoria de usabilidade e identificação automática da camada de destino;
-Força o refresh para atualização de mapa/contagens/simbologia."
+    "Melhoria de usabilidade e identificação automática da camada de destino;",
+    "Força o refresh para atualização de mapa/contagens/simbologia."
     ],
     "download_url": "https://github.com/dgterritorio/modelodedados_pdm_ren/raw/refs/heads/main/modelosdedados_melhoria/modelo_ren/plugin_qgis/ren_importar_md.zip"
   },
