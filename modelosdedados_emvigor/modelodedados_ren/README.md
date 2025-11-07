@@ -6,6 +6,4 @@ Esta pasta contem a Norma Técnica da REN transcrita para um documento atualizá
 
 ## [Tabelas da Norma em formato reutilizável CSV](tabelas_ren)
 
-## [Modelo de dados da REN](modelo_ren)
-
 ## [Manual SSAIGT da REN](manual_ssaigt_ren)

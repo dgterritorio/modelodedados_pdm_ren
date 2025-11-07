@@ -662,6 +662,7 @@ imprescindível para sua leitura.
 |Infraestruturas|Drenagem de Águas Residuais|**Colector de Águas Residuais**|44|
 |Infraestruturas|Drenagem de Águas Residuais|**Bombagem ou Tratamento de Águas Residuais**|45|
 |Infraestruturas|Drenagem de Águas Residuais|**Zona de Servidão de Drenagem de Águas Residuais**|103|
+|Infraestruturas|Recolha e Tratamento de Resíduos Sólidos|**Estação de Tratamento de Resíduos Sólidos**|47|
 |Infraestruturas|Rede Elétrica|**Infraestrutura de Produção ou Transformação de Energia Elétrica**|49|
 |Infraestruturas|Rede Elétrica|**Infraestrutura de Transporte de Energia Eletrica**|51|
 |Infraestruturas|Rede Elétrica|**Zona de Servidão de Rede Elétrica**|104|
