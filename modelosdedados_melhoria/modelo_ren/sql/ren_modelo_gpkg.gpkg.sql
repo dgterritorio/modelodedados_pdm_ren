@@ -689,7 +689,7 @@ END;
 DROP VIEW IF EXISTS excl_tip;
 
 CREATE VIEW IF NOT EXISTS excl_tip AS
-    SELECT ROW_NUMBER() OVER () AS fid,
+    SELECT ROW_NUMBER() OVER() AS fid,
            t.fid AS fid_tip_p,
            e.fid AS fid_excl_p,
            ST_Intersection(t.geom, e.geom) AS geom,
@@ -698,6 +698,8 @@ CREATE VIEW IF NOT EXISTS excl_tip AS
            e.exclusao,
            e.fundamento,
            e.fim_dest,
+           t.area_m2 AS area_tip,
+           e.area_m2 AS area_excl,
            ROUND(ST_Area(ST_Intersection(t.geom, e.geom)), 2) AS area_excl_tip,
            t.ato_id AS ato_tip,
            e.ato_id AS ato_excl
@@ -1410,7 +1412,13 @@ INSERT INTO gpkg_spatial_ref_sys (srs_name, srs_id, organization, organization_c
 INSERT INTO gpkg_spatial_ref_sys (srs_name, srs_id, organization, organization_coordsys_id, definition, description) VALUES ('WGS 84 geodetic', 4326, 'EPSG', 4326, 'GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST],AUTHORITY["EPSG","4326"]]', 'longitude/latitude coordinates in decimal degrees on the WGS 84 spheroid');
 INSERT INTO gpkg_spatial_ref_sys (srs_name, srs_id, organization, organization_coordsys_id, definition, description) VALUES ('ETRS89 / Portugal TM06', 3763, 'EPSG', 3763, 'PROJCS["ETRS89 / Portugal TM06",GEOGCS["ETRS89",DATUM["European_Terrestrial_Reference_System_1989",SPHEROID["GRS 1980",6378137,298.257222101,AUTHORITY["EPSG","7019"]],AUTHORITY["EPSG","6258"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4258"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",39.6682583333333],PARAMETER["central_meridian",-8.13310833333333],PARAMETER["scale_factor",1],PARAMETER["false_easting",0],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","3763"]]', NULL);
 
+-- Table: metadata
+DROP TABLE IF EXISTS metadata;
 
+CREATE TABLE IF NOT EXISTS metadata (
+    key TEXT PRIMARY KEY,
+    value TEXT
+);
 
 COMMIT TRANSACTION;
 PRAGMA foreign_keys = on;
