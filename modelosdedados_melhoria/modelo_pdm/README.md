@@ -65,6 +65,9 @@ Para efeitos de exemplificação de uso do modelo de PDM proposto, são apresent
    Regista atos administrativos associados a determinada geometria.
 
 ![pdm_diagrama_gpkg.png](media/pdm_diagrama_gpkg.png)
+
+> [Abrir correspondência de campos entre modelo de dados em vigor e proposta de melhoria](info/compara_modelo_dados_pdm.md).
+
 ---
 
 ### Vistas
