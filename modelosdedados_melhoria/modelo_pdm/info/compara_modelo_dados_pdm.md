@@ -1,6 +1,6 @@
 ## PDM - Correspondência de campos entre modelo de dados em vigor e proposta de melhoria
 
-Os campos acrescentados na proposta sem correspondência com a versão em vigor estão assinalados como `NULL`.
+Os campos acrescentados ou retirados na proposta sem correspondência com a versão em vigor estão assinalados como `NULL`.
 
 ---
 
