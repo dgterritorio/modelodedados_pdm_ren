@@ -1,12 +1,12 @@
 ## PDM - Correspondência de campos entre modelo de dados em vigor e proposta de melhoria
 
-Os campos sem correspondência estão como `NULL`.
+Os campos acrescentados na proposta sem correspondência com a versão em vigor estão assinalados como `NULL`.
 
 ---
 
-### Tabela: OBJETOS_TIPO
+### Tabela: OBJETO_TIPO
 
-| **Proposta objeto_tipo** | **Relação** | **OBJETOS_TIPO** |
+| **Campos da proposta [objeto_tipo]** | **Relação** | **Campos em vigor [OBJETO_TIPO]** |
 |----------------------|:-------:|--------------|
 | fid                  |    ≠    | ID           |
 | codigo               |    =    | CODIGO       |
@@ -23,25 +23,25 @@ Os campos sem correspondência estão como `NULL`.
 
 ### Tabela: OBJETOS_PONTO
 
-| **Proposta objeto_ponto** | **Relação** | **OBJETOS_PONTO** |
+| **Campos da proposta [objeto_ponto]** | **Relação** | **Campos em vigor [OBJETOS_PONTO]** |
 |-----------------------|---------|---------------|
-| fid                   | ≠       | ID            |
-| geom                  | =       | GEOM          |
-| objeto_uuid           | ≠       | IDENTIFICA    |
-| dtcc                  | ≠       | `NULL`        |
-| planta                | ≠       | `NULL`        |
-| codigo                | ≠       | `NULL`        |
-| legenda               | ≠       | ESPECIFICA    |
-| etiqueta              | =       | ETIQUETA      |
-| fonte_inf             | =       | FONTE_INF     |
-| data_inf              | =       | DATA_INF      |
-| ato_id                | ≠       | `NULL`        |
+| fid                   |    ≠    | ID            |
+| geom                  |    =    | GEOM          |
+| objeto_uuid           |    ≠    | IDENTIFICA    |
+| dtcc                  |    ≠    | `NULL`        |
+| planta                |    ≠    | `NULL`        |
+| codigo                |    ≠    | `NULL`        |
+| legenda               |    ≠    | ESPECIFICA    |
+| etiqueta              |    =    | ETIQUETA      |
+| fonte_inf             |    =    | FONTE_INF     |
+| data_inf              |    =    | DATA_INF      |
+| ato_id                |    ≠    | `NULL`        |
 
 ---
 
 ### Tabela: OBJETO_LINHA
 
-| **Proposta objeto_linha** | **Relação** | **OBJETO_LINHA** |
+| **Campos da proposta [objeto_linha]** | **Relação** | **Campos em vigor [OBJETO_LINHA]** |
 |-----------------------|---------|--------------|
 | fid                   | ≠       | ID           |
 | geom                  | =       | GEOM         |
@@ -60,7 +60,7 @@ Os campos sem correspondência estão como `NULL`.
 
 ### Tabela: OBJETO_POLIGONO
 
-| **Proposta objeto_poligono** | **Relação** | **OBJETO_LINHA** |
+| **Campos da proposta [objeto_poligono]** | **Relação** | **Campos em vigor [OBJETO_LINHA]** |
 |--------------------------|---------|--------------|
 | fid                      | ≠       | ID           |
 | geom                     | =       | GEOM         |
@@ -79,7 +79,7 @@ Os campos sem correspondência estão como `NULL`.
 
 ### Tabela: ATO_ESPECIFICO
 
-| **Proposta ato_especifico** | **Relação** | **ATO_ESPECIFICO** |
+| **Campos da proposta [ato_especifico]** | **Relação** | **Campos em vigor [ATO_ESPECIFICO]** |
 |-------------------------|:-------:|----------------|
 | fid                     |    ≠    | IDENTIFICA     |
 | serie                   |    =    | SERIE          |
