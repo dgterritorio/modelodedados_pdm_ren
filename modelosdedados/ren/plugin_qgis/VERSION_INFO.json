@@ -1,0 +1,22 @@
+{  "plugin": {
+    "version": "2.0.0",
+    "changelog": [
+    "Primeira versão de produção."
+    ],
+    "download_url": "https://github.com/dgterritorio/modelodedados_pdm_ren/raw/refs/heads/main/modelosdedados/ren/plugin_qgis/ren_importar_md.zip"
+  },
+  "gpkg": {
+    "version": "2.0.0",
+    "changelog": [
+    "Primeira versão de produção."
+    ],
+    "download_url": "https://github.com/dgterritorio/modelodedados_pdm_ren/raw/refs/heads/main/modelosdedados/ren/modelo/ren_modelo_gpkg.gpkg"
+  },
+  "qgs": {
+    "version": "2.0.0",
+    "changelog": [
+      "Primeira versão de produção."
+    ],
+    "download_url": "https://github.com/dgterritorio/modelodedados_pdm_ren/raw/refs/heads/main/modelosdedados/ren/modelo/REN_modelo.qgs"
+  }
+}

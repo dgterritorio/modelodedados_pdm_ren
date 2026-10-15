@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="pt-PT">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ajuda - PDM: Importar para o Modelo de Dados (GeoPackage)</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      color: #222;
+      padding: 18px;
+      max-width: 860px;
+    }
+
+    header {
+      border-bottom: 2px solid #0b5;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 1.35rem;
+      margin: 0 0 4px 0;
+      color: #083;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      margin: 18px 0 6px;
+      color: #0b5;
+      border-left: 4px solid #0b5;
+      padding-left: 8px;
+    }
+
+    h3 {
+      font-size: 0.97rem;
+      margin: 12px 0 4px;
+      color: #333;
+    }
+
+    nav {
+      margin: 8px 0 18px;
+      background: #f0f8f0;
+      padding: 10px 14px;
+      border-radius: 6px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #036;
+      margin-right: 14px;
+      font-size: 0.92rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 16px;
+      padding: 12px 12px;
+      background: #fbfbfb;
+      border: 1px solid #e5e5e5;
+      border-radius: 6px;
+    }
+
+    .kbd {
+      font-family: monospace;
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.93rem;
+    }
+
+    .kbr {
+      font-family: monospace;
+      background: #f5e0e0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.93rem;
+    }
+
+    .note {
+      background: #fff8d6;
+      padding: 8px 10px;
+      border-left: 4px solid #ffd54f;
+      margin: 8px 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .tip {
+      background: #e8f5e9;
+      padding: 8px 10px;
+      border-left: 4px solid #4caf50;
+      margin: 8px 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .warn {
+      background: #fff3e0;
+      padding: 8px 10px;
+      border-left: 4px solid #ff9800;
+      margin: 8px 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    ul,
+    ol {
+      margin: 6px 0 6px 20px;
+    }
+
+    li {
+      margin-bottom: 3px;
+    }
+
+    .example {
+      font-size: 0.93rem;
+      padding: 8px 10px;
+      background: #f4f8ff;
+      border: 1px dashed #b0cfe8;
+      border-radius: 6px;
+      margin: 6px 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 0.9rem;
+      margin: 8px 0;
+    }
+
+    th {
+      background: #0b5;
+      color: #fff;
+      padding: 5px 8px;
+      text-align: left;
+    }
+
+    td {
+      border: 1px solid #ddd;
+      padding: 4px 8px;
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td {
+      background: #f7f7f7;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.85rem;
+      color: #666;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+
+    .icon {
+      width: 18px;
+      height: 18px;
+      vertical-align: middle;
+      margin-right: 2px;
+    }
+
+    .tag-proc {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #0d47a1;
+      border-radius: 3px;
+      padding: 1px 6px;
+      font-size: 0.82rem;
+      margin-left: 4px;
+    }
+
+    .tag-mem {
+      display: inline-block;
+      background: #e8f5e9;
+      color: #1b5e20;
+      border-radius: 3px;
+      padding: 1px 6px;
+      font-size: 0.82rem;
+      margin-left: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>PDM - Importar para o Modelo de Dados (GeoPackage)</h1>
+    <div style="color:#555; font-size:0.93rem;">Plugin QGIS · Ajuda e referência de funcionalidades</div>
+  </header>
+
+  <nav>
+    <strong>Índice:</strong><br /><br />
+    <a href="#visao-geral">- Visão Geral</a><br />
+    <a href="#toolbar">- Barra de Ferramentas</a><br />
+    <a href="#tab-config">- Configuração / Mapeamento</a><br />
+    <a href="#filtros">- Filtrar por Tipo de Geometria</a><br />
+    <a href="#config-save-load">- Guardar/Carregar Configuração</a><br />
+    <a href="#registo">- Registo</a><br />
+    <a href="#faq">- Resolução de Problemas</a><br />
+  </nav>
+
+  <!-- VISÃO GERAL -->
+  <section id="visao-geral">
+    <h2>Visão Geral</h2>
+    <p>O plugin <strong>PDM - Importar para o Modelo de Dados</strong> destina-se a apoiar a transferência de
+      dados espaciais para um GeoPackage que respeite o modelo PDM, simplificando mapeamentos e passos comuns de
+      preparação.</p>
+    <p>As principais funcionalidades são:</p>
+    <ol>
+      <li><strong>Importação de dados</strong> - carregar camadas de origens diversas (gpkg, PostgreSQL/PostGIS, shp, mpk, csv, (pasta).gdb) e
+        transferi-las para o GeoPackage modelo do PDM, com mapeamento de campos e valores conforme o catálogo de
+        objetos.</li>
+      <li><strong>Preparação e validação básica</strong> - operações como separação de multipart, reparação de
+        geometrias inválidas (makeValid) e verificações simples de consistência de campos.</li>
+    </ol>
+    <div class="note">O modelo de dados GeoPackage do PDM contém as tabelas <span class="kbd">objeto_ponto</span>, <span
+        class="kbd">objeto_linha</span> e <span class="kbd">objeto_poligono</span>, com os campos obrigatórios definidos
+      pela DGT.</div>
+  </section>
+
+  <!-- TOOLBAR -->
+  <section id="toolbar">
+    <h2>Barra de Ferramentas</h2>
+    <table>
+      <tr>
+        <th>Ícone</th>
+        <th>Função</th>
+      </tr>
+      <tr>
+        <td><img src="img/mActionFileSave.svg" class="icon" alt=""> Guardar</td>
+        <td>Guarda a configuração actual de mapeamento num ficheiro <strong>.json</strong>, para reutilização.</td>
+      </tr>
+      <tr>
+        <td><img src="img/mActionFileOpen.svg" class="icon" alt=""> Carregar</td>
+        <td>Carrega uma configuração de mapeamento previamente guardada em <strong>.json</strong>.</td>
+      </tr>
+      <tr>
+        <td><img src="img/zip.svg" class="icon" alt=""> Modelo</td>
+        <td>Descarrega um ficheiro <strong>pdm_modelo.zip</strong> (modelo GeoPackage vazio) para o local escolhido
+          pelo utilizador.</td>
+      </tr>
+      <tr>
+        <td><img src="img/mActionRefresh.svg" class="icon" alt=""> Versão</td>
+        <td>Verifica as versões do plugin e do modelo GeoPackage, quando disponíveis.</td>
+      </tr>
+      <tr>
+        <td><img src="img/mActionHelpContents.svg" class="icon" alt=""> Ajuda</td>
+        <td>Abre/fecha este painel de ajuda.</td>
+      </tr>
+      <tr>
+        <td><img src="img/mActionMergeFeatureAttributes.svg" class="icon" alt=""> Mapear</td>
+        <td>Mapear Automaticamente - o plugin compara os nomes das colunas da origem com os do modelo
+        usando um rácio de similaridade</td>
+      </tr>
+      <tr>
+        <td><img src="img/mIconGeometryCollectionLayer.svg" class="icon" alt=""> Filtro geom</td>
+        <td>Filtro de tipo de geometria (p.ex. point / line / polygon).</td>
+      </tr>
+      <tr>
+        <td><img src="img/mActionOpenTable.svg" class="icon" alt=""> Tabela</td>
+        <td>Abre a tabela de atributos da camada de origem selecionada.</td>
+      </tr>
+      <tr>
+        <td><img src="img/mIconFieldText.svg" class="icon" alt=""> Valores</td>
+        <td>Mostra os valores únicos do campo de origem selecionado (útil para mapear valores).</td>
+      </tr>
+      <tr>
+        <td><img src="img/mActionAddOgrLayer.svg" class="icon" alt=""> Adicionar camada</td>
+        <td>Adicionar camada ao mapa para visualização dos dados geográficos.</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- CONFIGURAÇÃO -->
+  <section id="tab-config">
+    <h2>Separador: Configuração / Mapeamento</h2>
+
+    <h3>1. Selecionar o GeoPackage modelo</h3>
+    <p>Clicar em <span class="kbd">Selecionar GeoPackage (Modelo)</span> e escolher o ficheiro <strong>.gpkg</strong>
+      que serve de destino (modelo da PDM). Se o ficheiro já estiver carregado como camada no QGIS, é detetado
+      automaticamente.</p>
+    <ul>
+      <li>O plugin valida se o ficheiro tem permissões de escrita.</li>
+      <li>As tabelas disponíveis (<span class="kbd">objeto_ponto</span>, <span class="kbd">objeto_linha</span>, <span
+          class="kbd">objeto_poligono</span>) são listadas automaticamente.</li>
+    </ul>
+
+    <h3>2. Tabela de destino</h3>
+    <ul>
+      <li>Selecionar a tabela de destino conforme o tipo de geometria a importar.</li>
+      <li>O campo <strong>DTCC</strong> (código de município) é preenchido automaticamente se existir no GeoPackage;
+        pode ser ajustado manualmente.</li>
+      <li>O botão <span class="kbd">Ver Catálogo (modelo)</span> mostra os códigos e designações do catálogo,
+        atualizados em função da tabela selecionada.</li>
+    </ul>
+
+    <h3>3. Adicionar fontes de dados</h3>
+    <table>
+      <tr>
+        <th>Formato</th>
+        <th>Como carregar</th>
+      </tr>
+      <tr>
+        <td>.gpkg</td>
+        <td>Todas as camadas do GeoPackage são importadas de uma vez.</td>
+      </tr>
+      <tr>
+        <td>PostgreSQL</td>
+        <td>Ligação a base de dados PostGIS através de perfis de ligação configurados no QGIS.</td>
+      </tr>
+      <tr>
+        <td>.shp</td>
+        <td>Ficheiros Shapefile individuais.</td>
+      </tr>
+      <tr>
+        <td>.mpk</td>
+        <td>Pacote de mapas ArcGIS - o plugin procura shapefiles internos via GDAL VFS.</td>
+      </tr>
+      <tr>
+        <td>.csv</td>
+        <td>Texto delimitado por vírgula, carregado como camada de texto.</td>
+      </tr>
+      <tr>
+        <td>Pasta .gdb</td>
+        <td>File Geodatabase (ESRI) - usar o botão <span class="kbd">Adicionar pasta GDB</span>.</td>
+      </tr>
+    </table>
+    <div class="note">Após carregar as fontes, a janela do plugin mantém-se em primeiro plano. As camadas carregadas
+      aparecem no grupo <strong>Tabelas Origem</strong> do painel de camadas do QGIS.</div>
+    
+    <h3>4. Mapeamento de campos</h3>
+    <p>Existem três formas de mapear campos da origem para o modelo:</p>
+    <ol>
+      <li><strong>Mapear Automaticamente</strong> - o plugin compara os nomes das colunas da origem com os do modelo
+        usando um rácio de similaridade (por defeito 0,7). O resultado é registado no log.</li>
+      <li><strong>Adicionar linha manualmente</strong> - clicar em <span class="kbd">Adicionar Linha</span> e definir:
+        <span class="kbd">Coluna do Modelo</span> -> <span class="kbd">Tabela de Origem</span> -> <span
+          class="kbd">Coluna
+          de Origem</span> -> (opcional) <span class="kbd">Código (substituição)</span>. <span class="kbr">Se o Código (substituição) for
+          preenchido, esse valor será usado na importação.</span>
+      </li>
+      <li><strong>Mapeamento de valores</strong> - quando a coluna de origem tem designações que correspondem a códigos
+        do catálogo, usar o botão <span class="kbd">Mapear</span> na coluna Ações para associar cada valor de origem a
+        um código de destino. O botão <span class="kbd">Mapear Valores Automaticamente</span> faz esta correspondência
+        por similaridade de texto.</li>
+    </ol>
+    <div class="example"><strong>Exemplo:</strong> se o valor de origem for "Espaços Centrais" e no catálogo existir
+      "Espaço Central", com rácio 0,7 a correspondência é aceite automaticamente.</div>
+
+    <h3>5. Opções de importação</h3>
+    <ul>
+      <li><strong>Separar geometrias múltiplas (Multipart -> Singlepart)</strong> - ao ativar esta opção, geometrias
+        multi-parte (MultiPolygon, MultiLineString, MultiLinePoint) são decompostas em partes simples antes da inserção, garantindo
+        conformidade com o modelo. <code class="kbr">[Não utilizar em tabelas que tenham campos chave que sejam unicos]</code></li>
+      <li><strong>Reparar geometrias inválidas (makeValid)</strong> - aplica automaticamente a função de reparação a
+        geometrias inválidas durante a importação.</li>
+    </ul>
+
+    <h3>6. Executar importação</h3>
+    <p>Após configurar todos os mapeamentos, clicar em <span class="kbd">Executar Importação</span>. O plugin valida
+      cada registo e insere os dados no GeoPackage de destino conforme o mapeamento.</p>
+    <div class="warn">Verificar que o GeoPackage não está aberto por outro processo antes de executar. A importação de
+      grandes volumes de dados pode demorar.</div>
+  </section>
+
+  <section id="filtros">
+    <h2>Filtrar por Tipo de Geometria</h2>
+    <p>A tabela de mapeamento tem uma coluna <span class="kbd">Tipo de Geometria</span> e um menu de filtro no cabeçalho que permite:</p>
+    <ul>
+      <li>Mostrar todas as linhas.</li>
+      <li>Selecionar apenas linhas com um determinado tipo de geometria (p.ex. point / line / polygon).</li>
+    </ul>
+    <p>As opções do filtro são atualizadas dinamicamente com base nos valores presentes na tabela de mapeamento e o estado do filtro é registado no log.</p>
+  </section>
+
+  <section id="config-save-load">
+    <h2>Guardar/Carregar Configuração</h2>
+    <p><strong>Guardar Configuração:</strong> cria um ficheiro JSON com o mapeamento actual (inclui caminhos das fontes, mapeamentos por linha, DTCC, planta e rácio de similaridade).</p>
+    <p><strong>Carregar Configuração:</strong> importa um ficheiro JSON e tenta preencher a interface com as definições guardadas (avisa se a versão de configuração for diferente).</p>
+  </section>
+
+  <!-- REGISTO -->
+  <section id="registo">
+    <h2>Separador: Registo</h2>
+    <p>O separador <strong>Registo</strong> (Log) apresenta todas as mensagens geradas pelo plugin com data e hora:</p>
+    <ul>
+      <li>Resultados das verificações de validação (número de erros, camadas criadas).</li>
+      <li>Avisos de importação (campos não mapeados, geometrias reparadas, etc.).</li>
+      <li>Erros e exceções com detalhe técnico.</li>
+    </ul>
+    <p>O botão <span class="kbd">Guardar Log</span> exporta o conteúdo para um ficheiro <strong>.txt</strong> para
+      arquivo ou reporte técnico.</p>
+    <div class="tip">As mensagens de validação incluem linhas DEBUG quando relevante (ex: contagem de elementos
+      inseridos na camada de reparação). Estas linhas podem ser ignoradas em uso normal.</div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>Resolução de Problemas (FAQ)</h2>
+    <ul>
+      <li><strong>Não encontro as tabelas no GeoPackage:</strong> selecione manualmente o GeoPackage com
+        <span class="kbd">Selecionar GeoPackage (Modelo)</span>.</li>
+      <li><strong>Erro ao escrever no GeoPackage:</strong> confirme permissões e que o ficheiro não está a ser usado por outro
+        processo.</li>
+      <li><strong>Ficheiro .gdb ou .mpk não carrega:</strong> verifique a instalação e suporte do GDAL no seu sistema.</li>
+      <li><strong>Camada reparada tem menos elementos:</strong> consulte o log para mensagens <em>[DEBUG makeValid]</em>.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <div><strong>Nota:</strong> Este plugin fornece funcionalidades de importação e validações básicas para o modelo
+      PDM.</div>
+    <div style="margin-top:6px;">Plugin desenvolvido para QGIS 3.x · Python 3.</div>
+  </footer>
+</body>
+
+</html>

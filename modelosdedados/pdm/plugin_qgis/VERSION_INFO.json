@@ -1,0 +1,23 @@
+{
+  "plugin": {
+    "version": "2.0.0",
+    "changelog": [
+    "Primeira versão de produção."
+    ],
+    "download_url": "https://github.com/dgterritorio/modelodedados_pdm_ren/raw/refs/heads/main/modelosdedados/pdm/plugin_qgis/pdm_importar_md.zip"
+  },
+  "gpkg": {
+    "version": "2.0.0",
+    "changelog": [
+    "Primeira versão de produção."
+    ],
+    "download_url": "https://github.com/dgterritorio/modelodedados_pdm_ren/raw/refs/heads/main/modelosdedados/pdm/modelo/pdm_modelo_gpkg.gpkg"
+  },
+  "qgs": {
+    "version": "2.0.0",
+    "changelog": [
+      "Primeira versão de produção."
+    ],
+    "download_url": "https://github.com/dgterritorio/modelodedados_pdm_ren/raw/refs/heads/main/modelosdedados/pdm/modelo/PDM_modelo.qgs"
+  }
+}
